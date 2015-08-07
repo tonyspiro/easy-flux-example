@@ -16,10 +16,11 @@ npm install
 
 Optional:
 
+Gulp
 ```
 gulp watch
 ```
-
+HTTP Server
 ```
 sudo npm install -g http-server
 http-server
