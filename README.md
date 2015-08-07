@@ -2,16 +2,26 @@
 An easy flux example that shows basic usage on this powerful application architecture.
 
 ##Getting started
-```git clone https://github.com/tonyspiro/easy-flux-example```
+```
+git clone https://github.com/tonyspiro/easy-flux-example
+```
 
-```cd easy-flux-example```
+```
+cd easy-flux-example
+```
 
-```npm install```
+```
+npm install
+```
 
 Optional:
 
-```gulp watch```
+```
+gulp watch
+```
 
-```http-server```
+```
+http-server
+```
 
 Go to http://localhost:8080
