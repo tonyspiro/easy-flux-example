@@ -1,5 +1,5 @@
 # easy-flux-example
-An easy flux example that shows basic usage on this powerful application architecture.
+An easy flux example that shows basic usage of this powerful application architecture.
 
 ##Getting started
 ```
