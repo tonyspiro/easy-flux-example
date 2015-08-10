@@ -1,5 +1,5 @@
 # easy-flux-example
-An easy React application using the Flux approach.  For more info on Flux, visit the [official Flux website](https://facebook.github.io/flux/).
+An basic React application using the Flux approach.  For more info on Flux, visit the [official Flux website](https://facebook.github.io/flux/).
 
 ##Getting started
 ```
