@@ -1,5 +1,5 @@
 # easy-flux-example
-An easy example that shows basic usage of the Flux approach.  For more info on Flux, visit the [official Flux website](https://facebook.github.io/flux/).
+An easy example usage of the Flux approach.  For more info on Flux, visit the [official Flux website](https://facebook.github.io/flux/).
 
 ##Getting started
 ```
