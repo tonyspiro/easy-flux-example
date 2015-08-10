@@ -21,6 +21,6 @@ gulp.task('default', ['build']);
 gulp.task('watch', function () {
  	gulp.watch("./*.js", ['default']);
  	gulp.watch("./Components/*.jsx", ['default']);
- 	gulp.watch("./Dispatchers/*.js", ['default']);
- 	gulp.watch("./Stores/*.js", ['default']);
+ 	gulp.watch("./dispatcher/*.js", ['default']);
+ 	gulp.watch("./stores/*.js", ['default']);
 });
