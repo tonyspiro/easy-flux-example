@@ -3,7 +3,7 @@ import _ from 'lodash';
 
 let ListStore = _.extend({}, EventEmitter.prototype, {
 
-  // Actual collection of model data
+  // Mock default data
   items: [
     {
       name: 'Item 1',
