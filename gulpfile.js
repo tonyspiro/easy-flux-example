@@ -20,7 +20,7 @@ gulp.task('default', ['build']);
 
 gulp.task('watch', function () {
  	gulp.watch("./*.js", ['default']);
- 	gulp.watch("./Components/*.jsx", ['default']);
+ 	gulp.watch("./components/*.jsx", ['default']);
  	gulp.watch("./dispatcher/*.js", ['default']);
  	gulp.watch("./stores/*.js", ['default']);
 });
