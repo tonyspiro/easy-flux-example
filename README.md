@@ -11,11 +11,12 @@ I've set this up as a step-by-step tutorial on [my blog](http://tonyspiro.com/).
 git clone https://github.com/tonyspiro/easy-flux-example
 cd easy-flux-example
 npm install
+gulp
 ```
 
 Optional:
 
-Gulp
+Gulp watch
 ```
 gulp watch
 ```
