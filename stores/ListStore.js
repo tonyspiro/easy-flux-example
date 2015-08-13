@@ -14,15 +14,18 @@ let ListStore = _.extend({}, EventEmitter.prototype, {
       id: 1
     }
   ],
-
+ 
+  // Get all items
   getItems: function() {
     return this.items;
   },
-
+  
+  // Add item
   addItem: function(new_item){
     this.items.push(new_item);
   },
-
+  
+  // Remove item
   removeItem: function(item_id){
     
     let items = this.items;
