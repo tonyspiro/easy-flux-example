@@ -2,7 +2,7 @@
 An easy React application that demonstrates basic usage of the Flux architecture pattern.  For more info on Flux, visit the [official Flux website](https://facebook.github.io/flux/).
 
 ## Tutorial
-I've set this up as a step-by-step tutorial on my blob.  [Click here to follow the tutorial on building this Easy Flux Example](http://tonyspiro.com/an-easy-flux-example-application/).
+I've set this up as a step-by-step tutorial on [my blog](http://tonyspiro.com/).  [Click here to follow the tutorial on building this Easy Flux Example](http://tonyspiro.com/an-easy-flux-example-application/).
 ##Getting started
 ```
 git clone https://github.com/tonyspiro/easy-flux-example
