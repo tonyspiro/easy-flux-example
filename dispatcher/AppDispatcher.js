@@ -14,7 +14,7 @@ AppDispatcher.register(function(payload) {
 
   switch(action) {
 
-    // Respond to RECEIVE_DATA action
+    // Respond to add-item action
     case 'add-item':
       ListStore.addItem(new_item);
       break;
