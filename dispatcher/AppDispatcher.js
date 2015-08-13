@@ -18,7 +18,8 @@ AppDispatcher.register(function(payload) {
     case 'add-item':
       ListStore.addItem(new_item);
       break;
-
+    
+    // Respond to remove-item action
     case 'remove-item':
       ListStore.removeItem(id);
       break;
