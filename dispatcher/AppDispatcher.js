@@ -10,8 +10,6 @@ AppDispatcher.register(function(payload) {
   let new_item = payload.new_item;
   let id = payload.id;
 
-  let text;
-
   switch(action) {
 
     // Respond to add-item action
