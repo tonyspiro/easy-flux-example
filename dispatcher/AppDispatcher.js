@@ -4,7 +4,7 @@ let AppDispatcher = new Dispatcher();
 import ListStore from '../stores/ListStore';
 
 // Register callback with AppDispatcher
-AppDispatcher.register(function(payload) {
+AppDispatcher.register((payload) => {
 
   let action = payload.action;
   let new_item = payload.new_item;
