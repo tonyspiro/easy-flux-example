@@ -1,3 +1,4 @@
+// AppRoot.jsx
 import React from 'react';
 import ListStore from '../stores/ListStore';
 import AppDispatcher from '../dispatcher/AppDispatcher';
@@ -6,7 +7,7 @@ import AppDispatcher from '../dispatcher/AppDispatcher';
 import NewItemForm from './NewItemForm';
 
 // Method to retrieve state from Stores
-function getListState() {
+var getListState = () => {
   return {
     items: ListStore.getItems()
   };
@@ -42,7 +43,6 @@ class AppRoot extends React.Component {
       action: 'remove-item',
       id: id
     });
-
   }
 
   render(){
@@ -51,23 +51,21 @@ class AppRoot extends React.Component {
 
     let items = ListStore.getItems();
     
-    let itemHtml = items.map( function( listItem ) {
-
+    let itemHtml = items.map(( listItem ) => {
       return <li key={ listItem.id }>
-          { listItem.name } <button onClick={ _this.removeItem } data-id={ listItem.id }>&times;</button>
+          { listItem.name } <button onClick={ _this.removeItem } data-id={ listItem.id }>×</button>
         </li>;
-
     });
 
-    return <div>
+    return (
+      <div>
         <ul>
-            { itemHtml }
+          { itemHtml }
         </ul>
         <NewItemForm />
-
-    </div>;
+      </div>
+    );
   }
-
 }
 
 export default AppRoot;
