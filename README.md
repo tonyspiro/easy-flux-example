@@ -12,16 +12,11 @@ npm install
 gulp
 ```
 
-Optional:
-
-Gulp watch
+##Optional:
 ```
 gulp watch
-```
-HTTP Server
-```
 sudo npm install -g http-server
 http-server
 ```
 
-Go to http://localhost:8080
+Go to [http://localhost:8080](http://localhost:8080)
