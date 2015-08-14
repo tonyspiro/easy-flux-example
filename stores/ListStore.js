@@ -1,3 +1,4 @@
+// ListStore.js
 import {EventEmitter} from 'events';
 import _ from 'lodash';
 
@@ -14,43 +15,43 @@ let ListStore = _.extend({}, EventEmitter.prototype, {
       id: 1
     }
   ],
- 
+
   // Get all items
-  getItems: function() {
-    return this.items;
+  getItems: () => {
+    return ListStore.items;
   },
-  
+
   // Add item
-  addItem: function(new_item){
-    this.items.push(new_item);
+  addItem: (new_item) =>{
+    ListStore.items.push(new_item);
   },
-  
+
   // Remove item
-  removeItem: function(item_id){
+  removeItem: (item_id) =>{
     
-    let items = this.items;
+    let items = ListStore.items;
     
-    _.remove(items, function(item) {
+    _.remove(items, (item) => {
       return item_id == item.id;
     });
     
-    this.items = items;
+    ListStore.items = items;
 
   },
 
   // Emit Change event
-  emitChange: function(){
-    this.emit('change');
+  emitChange: () =>{
+    ListStore.emit('change');
   },
 
   // Add change listener
-  addChangeListener: function(callback) {
-    this.on('change', callback);
+  addChangeListener: (callback) => {
+    ListStore.on('change', callback);
   },
 
   // Remove change listener
-  removeChangeListener: function(callback) {
-    this.removeListener('change', callback);
+  removeChangeListener: (callback) => {
+    ListStore.removeListener('change', callback);
   }
 
 });
