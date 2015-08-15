@@ -7,7 +7,7 @@ import AppDispatcher from '../dispatcher/AppDispatcher';
 import NewItemForm from './NewItemForm';
 
 // Method to retrieve state from Stores
-var getListState = () => {
+let getListState = () => {
   return {
     items: ListStore.getItems()
   };
