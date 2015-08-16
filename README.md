@@ -12,7 +12,7 @@ npm install
 gulp
 ```
 
-##Optional:
+##Optional Gulp Watch and HTTP-Server:
 ```
 gulp watch
 sudo npm install -g http-server
