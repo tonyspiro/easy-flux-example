@@ -12,8 +12,8 @@ npm install
 gulp
 ```
 
-##Optional
-###Gulp Watch and HTTP-Server:
+###Optional
+####Gulp Watch and HTTP-Server:
 ```
 gulp watch
 sudo npm install -g http-server
