@@ -17,41 +17,41 @@ let ListStore = _.extend({}, EventEmitter.prototype, {
   ],
 
   // Get all items
-  getItems: () => {
-    return ListStore.items;
+  getItems: function(){
+    return this.items;
   },
 
   // Add item
-  addItem: (new_item) =>{
-    ListStore.items.push(new_item);
+  addItem: function(new_item){
+    this.items.push(new_item);
   },
 
   // Remove item
-  removeItem: (item_id) =>{
+  removeItem: function(item_id){
     
-    let items = ListStore.items;
+    let items = this.items;
     
-    _.remove(items, (item) => {
+    _.remove(items,(item) => {
       return item_id == item.id;
     });
     
-    ListStore.items = items;
+    this.items = items;
 
   },
 
   // Emit Change event
-  emitChange: () =>{
-    ListStore.emit('change');
+  emitChange: function(){
+    this.emit('change');
   },
 
   // Add change listener
-  addChangeListener: (callback) => {
-    ListStore.on('change', callback);
+  addChangeListener: function(callback){
+    this.on('change', callback);
   },
 
   // Remove change listener
-  removeChangeListener: (callback) => {
-    ListStore.removeListener('change', callback);
+  removeChangeListener: function(callback) {
+    this.removeListener('change', callback);
   }
 
 });
