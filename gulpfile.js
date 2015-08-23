@@ -21,9 +21,9 @@ gulp.task('build', function () {
 
 gulp.task('compress', function() {
   return gulp.src('./dist/bundle.js')
-  	.pipe(uglify())
-		.pipe(rename({suffix: '.min'}))
-	  .pipe(gulp.dest('dist'));
+    .pipe(uglify())
+    .pipe(rename({suffix: '.min'}))
+    .pipe(gulp.dest('dist'));
 });
 
 gulp.task('default', function(cb) {
