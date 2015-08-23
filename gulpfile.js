@@ -31,8 +31,8 @@ gulp.task('default', function(cb) {
 });
 
 gulp.task('watch', function () {
- 	gulp.watch("./*.js", ['default']);
- 	gulp.watch("./components/*.jsx", ['default']);
- 	gulp.watch("./dispatcher/*.js", ['default']);
- 	gulp.watch("./stores/*.js", ['default']);
+   gulp.watch("./*.js", ['default']);
+   gulp.watch("./components/*.jsx", ['default']);
+   gulp.watch("./dispatcher/*.js", ['default']);
+   gulp.watch("./stores/*.js", ['default']);
 });
