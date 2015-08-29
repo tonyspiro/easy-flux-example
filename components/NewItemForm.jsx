@@ -1,6 +1,5 @@
 // NewItemForm.jsx
 import React from 'react';
-import ListStore from '../stores/ListStore';
 import AppDispatcher from '../dispatcher/AppDispatcher';
 
 class NewItemForm extends React.Component {
@@ -9,9 +8,6 @@ class NewItemForm extends React.Component {
     
     // so we don't reload the page
     e.preventDefault();
-    
-    // get all items
-    let items = ListStore.getItems();
     
     // create ID
     let id = guid();
